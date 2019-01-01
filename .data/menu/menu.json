@@ -1,0 +1,44 @@
+{
+  "drinks" : [
+          {
+            "title":"Orange Juice",
+            "price":"1.00"
+          },
+          {
+            "title":"Coffee",
+            "price":"0.50"
+          },
+          {
+            "title":"lemonaid",
+            "price":"1.00"
+          }
+        ],
+  "entrees" : [
+        {
+          "title":"Steak",
+          "price":"10.00"
+        },
+        {
+          "title":"Veggie Burger",
+          "price":"5.00"
+        },
+        {
+          "title":"mac and cheese",
+          "price":"4.00"
+        }
+    ],
+  "deserts" : [
+        {
+          "title":"Brownie",
+          "price":"2.00"
+        },
+        {
+          "title":"Ice Cream",
+          "price":"2.50"
+        },
+        {
+          "title":"Pie",
+          "price":"3.00"
+        }
+    ]
+}
