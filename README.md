@@ -17,13 +17,17 @@ POST to users with object below creates .data/users/<user-+-domain.tld>.json fil
 	"tosAgreement":true
 }
 
-POST to tokens with object.email and object.password in body returns 200 OK if email/pass are valid.
+POST to /tokens with object.email and object.password in body returns 200 OK if email/pass are valid.
 
-GET to users?email=<user@domain.tld> with token in header returns user Object.
+GET to /users?email=<user@domain.tld> with token in header returns user Object.
 
-PUT to users?email=<user@domain.tld> with token in header updates user Object file with Object.<data> in body of request Returns 200 OK.
+PUT to /users?email=<user@domain.tld> with token in header updates user Object file with Object.<data> in body of request Returns 200 OK.
 
-PUT to tokens with Object.id (token) and .extend (true) in body extends expiration of token
+DELETE to /users?email=<user@domain.tld> with token in header deletes user and orders associated with user
+
+@TODO delete each of the existing orders associated with a deleted user
+
+PUT to /tokens with Object.id (token) and .extend (true) in body extends expiration of token
 
 DELETE to tokens?id=<tokenID> removes token file from tokens.
 
