@@ -29,15 +29,15 @@ DELETE to /users?email=<user@domain.tld> with token in header deletes user and o
 
 PUT to /tokens with Object.id (token) and .extend (true) in body extends expiration of token
 
-DELETE to tokens?id=<tokenID> removes token file from tokens.
+DELETE to /tokens?id=<tokenID> removes token file from tokens.
 
-GET to menu?email=<user@domain.tld> with token in header returns menu Object
+GET to /menu?email=<user@domain.tld> with token in header returns menu Object
 
-POST to orders with tokenID in header and order Object in body payload creates order file in .data/orders including orderID and email addy.
+POST to /orders with token in header and order Object in body payload creates order file in .data/orders including orderID and email addy.
 
-@TODO PUT (update) to /orders?orderId=<orderId> with token in header.
+PUT (update) to /orders?orderId=<orderId> with token in header and menu item(s) in payload Object.
 
-@TODO DELETE to /orders?orderId=<orderid> with token in header.
+DELETE to /orders?orderId=<orderid> with token in header.
 
 @TODO POST to /submit?orderid=<orderId> with token in header. User submits order when ready, Integrates with Stripe.com to accept payment.
 
